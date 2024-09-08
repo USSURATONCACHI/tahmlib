@@ -12,16 +12,16 @@ message("Sdl2 TTF: " ${SDL_TTF_INCLUDE_DIRS})
 message("Sdl2 TTF: " ${SDL_TTF_LIBRARIES})
 
 add_executable(tahm
-    tahm/main.cpp
-    tahm/engine.cpp
+    src/main.cpp
     
-    tahm/tahm/audio.cpp
-    tahm/tahm/font.cpp
-    tahm/tahm/graphics.cpp
-    tahm/tahm/renderer.cpp
-    tahm/tahm/sound.cpp
-    tahm/tahm/tahm.cpp
-    tahm/tahm/window.cpp
+    src/engine.cpp
+    src/audio.cpp
+    src/font.cpp
+    src/graphics.cpp
+    src/renderer.cpp
+    src/sound.cpp
+    src/tahm.cpp
+    src/window.cpp
 )
 target_include_directories(tahm PUBLIC include)
 target_include_directories(tahm PRIVATE ${SDL2_INCLUDE_DIRS} ${SDL_TTF_INCLUDE_DIRS})
