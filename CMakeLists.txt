@@ -8,12 +8,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON) # For seamless VSCode extensions integraio
 find_package(SDL2 REQUIRED)
 find_package(SDL_ttf REQUIRED)
 
-message("Sdl2 TTF: " ${SDL_TTF_INCLUDE_DIRS})
-message("Sdl2 TTF: " ${SDL_TTF_LIBRARIES})
-
 add_executable(tahm
     src/main.cpp
-    
+
     src/engine.cpp
     src/audio.cpp
     src/font.cpp
