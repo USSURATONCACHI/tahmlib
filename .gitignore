@@ -56,3 +56,10 @@ ipch/
 *.scc
 
 *.tlog
+
+
+# CMake
+build/
+
+# VSCode
+.cache/
